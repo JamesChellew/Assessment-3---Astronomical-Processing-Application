@@ -1,4 +1,4 @@
-namespace AstronomicalProcessingApp
+﻿namespace AstronomicalProcessingApp
 {
     partial class Form1
     {
