@@ -11,4 +11,4 @@ Email: JamesPChellew@outlook.com || 30071566@tafe.wa.edu.au
    
 #### Josh Barker  
 stuID: 30072441  
-Email: 30072441@tafe.wa.edu.au
+Email: joshbarker5@outlook.com ||30072441@tafe.wa.edu.au
