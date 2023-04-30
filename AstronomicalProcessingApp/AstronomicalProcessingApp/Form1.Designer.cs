@@ -47,6 +47,7 @@
             buttonSearch.TabIndex = 0;
             buttonSearch.Text = "Search";
             buttonSearch.UseVisualStyleBackColor = true;
+            buttonSearch.Click += buttonSearch_Click;
             // 
             // buttonSort
             // 
