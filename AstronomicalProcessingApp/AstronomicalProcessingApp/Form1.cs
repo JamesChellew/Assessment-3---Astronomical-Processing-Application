@@ -19,11 +19,11 @@ namespace AstronomicalProcessingApp
             while (min <= max)
             {
                 mid = (min + max) / 2;
-                if (mid == key)
+                if (neutInteractions[mid] == key)
                 {
                     return;
                 }
-                else if (mid < key)
+                else if (neutInteractions[mid] < key)
                 {
                     min = mid++;
                 }
