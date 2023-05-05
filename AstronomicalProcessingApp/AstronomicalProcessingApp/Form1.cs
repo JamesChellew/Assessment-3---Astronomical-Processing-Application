@@ -9,6 +9,11 @@ namespace AstronomicalProcessingApp
         static int arraySize = 24;
         int[] neutInteractions = new int[arraySize];
 
+        private void randomise()
+        {
+
+        }
+
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             int mid;
