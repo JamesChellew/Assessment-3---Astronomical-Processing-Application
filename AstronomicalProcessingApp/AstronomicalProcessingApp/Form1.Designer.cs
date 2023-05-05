@@ -66,6 +66,7 @@
             buttonEdit.TabIndex = 2;
             buttonEdit.Text = "Edit";
             buttonEdit.UseVisualStyleBackColor = true;
+            buttonEdit.Click += buttonEdit_Click;
             // 
             // textBoxInput
             // 

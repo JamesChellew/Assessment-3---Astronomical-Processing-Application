@@ -17,17 +17,17 @@ namespace AstronomicalProcessingApp
             {
                 neutInteractions[i] = random.Next(10, 99);
             }
-            for (int i = 0; i < arraySize; i++) 
+            for (int i = 0; i < arraySize; i++)
             {
                 listBoxDisplay.Items.Add(neutInteractions[i]);
             }
         }
-        
+
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             int mid;
             int max = arraySize - 1;
-            int min = 0; 
+            int min = 0;
             int key = 0;
 
             while (min <= max)
@@ -45,6 +45,14 @@ namespace AstronomicalProcessingApp
                 {
                     max = mid--;
                 }
+            }
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (listBoxDisplay.SelectedIndex != -1)
+            {
+                textBoxInput.Text = neutInteractions[listBoxDisplay.SelectedIndex].ToString();
             }
         }
     }
