@@ -47,7 +47,7 @@ namespace AstronomicalProcessingApp
                 }
             }
         }
-
+        // Test Test
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             if (listBoxDisplay.SelectedIndex != -1)
@@ -58,7 +58,7 @@ namespace AstronomicalProcessingApp
 
         private void listBoxDisplay_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            textBoxInput.Text = neutInteractions[listBoxDisplay.SelectedIndex].ToString();
         }
     }
 }
