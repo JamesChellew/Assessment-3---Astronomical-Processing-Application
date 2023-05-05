@@ -8,8 +8,11 @@ namespace AstronomicalProcessingApp
             RdmFill();
             UpdateDisplay();
         }
+        // Global Variables
         static int arraySize = 24;
         int[] neutInteractions = new int[arraySize];
+
+        // Method fills array with 24 random numbers using random object
 
         void RdmFill()
         {
@@ -21,6 +24,8 @@ namespace AstronomicalProcessingApp
             
         }
 
+        // Clears listBoxDisplay and then writes neutInteractions array to listBoxDisplay
+
         void UpdateDisplay()
         {
             listBoxDisplay.Items.Clear();
@@ -31,31 +36,40 @@ namespace AstronomicalProcessingApp
             }
         }
 
+        // Binary Search Method on button click
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             int mid;
             int max = arraySize - 1;
             int min = 0;
-            int key = 0;
-
-            while (min <= max)
+            if (Int32.TryParse(textBoxInput.Text, out int key))
             {
-                mid = (min + max) / 2;
-                if (neutInteractions[mid] == key)
+                while (min <= max)
                 {
-                    return;
+                    mid = (min + max) / 2;
+                    if (neutInteractions[mid] == key)
+                    {
+                        MessageBox.Show("Search result found", "Search Result");
+                        break;
+                    }
+                    else if (neutInteractions[mid] < key)
+                    {
+                        min = mid++;
+                    }
+                    else
+                    {
+                        max = mid--;
+                    }
                 }
-                else if (neutInteractions[mid] < key)
-                {
-                    min = mid++;
-                }
-                else
-                {
-                    max = mid--;
-                }
+                MessageBox.Show("Search Value Not Found", "Search Result");
+            }
+            else
+            {
+                // ERROR MESSAGE HERE
             }
         }
-        // Test
+        // Parses user input from textBoxInput to integer. Check if is integer and checks if it is not white space.
+        // Using listBox index value, replaces corresponding value in the array with parsed input from user then updates the array.
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             string text = textBoxInput.Text;
