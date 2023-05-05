@@ -83,6 +83,7 @@
             listBoxDisplay.Name = "listBoxDisplay";
             listBoxDisplay.Size = new Size(177, 104);
             listBoxDisplay.TabIndex = 4;
+            listBoxDisplay.SelectedIndexChanged += listBoxDisplay_SelectedIndexChanged;
             // 
             // textBoxMessage
             // 

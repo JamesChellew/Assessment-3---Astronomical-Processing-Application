@@ -55,5 +55,10 @@ namespace AstronomicalProcessingApp
                 textBoxInput.Text = neutInteractions[listBoxDisplay.SelectedIndex].ToString();
             }
         }
+
+        private void listBoxDisplay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
