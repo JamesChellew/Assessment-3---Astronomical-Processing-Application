@@ -5,15 +5,24 @@ namespace AstronomicalProcessingApp
         public Form1()
         {
             InitializeComponent();
+            RdmFill();
         }
         static int arraySize = 24;
         int[] neutInteractions = new int[arraySize];
 
-        private void randomise()
+        void RdmFill()
         {
-
+            Random random = new Random();
+            for (int i = 0; i < arraySize; i++)
+            {
+                neutInteractions[i] = random.Next(10, 99);
+            }
+            for (int i = 0; i < arraySize; i++) 
+            {
+                listBoxDisplay.Items.Add(neutInteractions[i]);
+            }
         }
-
+        
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             int mid;
