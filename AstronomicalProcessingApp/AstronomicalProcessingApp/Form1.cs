@@ -6,6 +6,7 @@ namespace AstronomicalProcessingApp
         {
             InitializeComponent();
             RdmFill();
+            UpdateDisplay();
         }
         static int arraySize = 24;
         int[] neutInteractions = new int[arraySize];
@@ -17,8 +18,15 @@ namespace AstronomicalProcessingApp
             {
                 neutInteractions[i] = random.Next(10, 99);
             }
+            
+        }
+
+        void UpdateDisplay()
+        {
+            listBoxDisplay.Items.Clear();
             for (int i = 0; i < arraySize; i++)
             {
+                
                 listBoxDisplay.Items.Add(neutInteractions[i]);
             }
         }
@@ -50,15 +58,38 @@ namespace AstronomicalProcessingApp
         // Test
         private void buttonEdit_Click(object sender, EventArgs e)
         {
+            string text = textBoxInput.Text;
+
             if (listBoxDisplay.SelectedIndex != -1)
             {
-                textBoxInput.Text = neutInteractions[listBoxDisplay.SelectedIndex].ToString();
+                if (Int32.TryParse(text, out int input) && !(String.IsNullOrWhiteSpace(text)))
+                {
+                    int k = listBoxDisplay.SelectedIndex;
+                    
+                    neutInteractions[k] = input;
+                    UpdateDisplay();
+                }
+                else
+                {
+                    listBoxDisplay.ClearSelected();
+                    textBoxInput.Clear();
+                }
+                
+
             }
         }
 
         private void listBoxDisplay_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBoxInput.Text = neutInteractions[listBoxDisplay.SelectedIndex].ToString();
+            if (listBoxDisplay.SelectedIndex != -1)
+            {
+                textBoxInput.Text = neutInteractions[listBoxDisplay.SelectedIndex].ToString();
+            }
+            else
+            {
+                listBoxDisplay.ClearSelected();
+                textBoxInput.Clear();
+            }
         }
     }
 }
