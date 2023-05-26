@@ -170,6 +170,7 @@
             buttonMode.TabIndex = 13;
             buttonMode.Text = "Mode";
             buttonMode.UseVisualStyleBackColor = true;
+            buttonMode.Click += buttonMode_Click;
             // 
             // buttonMidExtreme
             // 
