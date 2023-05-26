@@ -105,5 +105,25 @@ namespace AstronomicalProcessingApp
                 textBoxInput.Clear();
             }
         }
+
+        private void buttonSort_Click(object sender, EventArgs e)
+        {
+            int max = arraySize;
+            int temp;
+
+            for (int pass = 0; pass < max - 1; pass++)
+            {
+                for (int index = 0; index < (max - pass - 1); index++)
+                {
+                    if (neutInteractions[index] > neutInteractions[index + 1])
+                    {
+                        temp = neutInteractions[index];
+                        neutInteractions[index] = neutInteractions[index + 1];
+                        neutInteractions[index + 1] = temp;
+                    }
+                }
+            }
+            UpdateDisplay();
+        }
     }
 }
