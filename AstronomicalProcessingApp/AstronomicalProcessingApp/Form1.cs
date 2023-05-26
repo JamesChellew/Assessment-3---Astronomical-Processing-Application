@@ -58,11 +58,11 @@ namespace AstronomicalProcessingApp
                     }
                     else if (neutInteractions[mid] < key)
                     {
-                        min = mid++;
+                        min = mid + 1;
                     }
-                    else
+                    else if (neutInteractions[mid] > key)
                     {
-                        max = mid--;
+                        max = mid - 1;
                     }
                 }
                 MessageBox.Show("Search Value Not Found", "Search Result");
