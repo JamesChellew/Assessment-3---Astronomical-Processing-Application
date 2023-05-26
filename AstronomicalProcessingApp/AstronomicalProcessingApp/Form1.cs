@@ -69,8 +69,7 @@ namespace AstronomicalProcessingApp
             }
             else
             {
-                // ERROR MESSAGE
-                
+                textBoxMessage.Text = ("Invalid Input");
             }
         }
         // Parses user input from textBoxInput to integer. Check if is integer and checks if it is not white space.
@@ -90,6 +89,7 @@ namespace AstronomicalProcessingApp
                 }
                 else
                 {
+                    textBoxMessage.Text = ("Invalid Change!");
                     listBoxDisplay.ClearSelected();
                     textBoxInput.Clear();
                 }
