@@ -37,9 +37,13 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            textBoxResult = new TextBox();
             label4 = new Label();
             button1 = new Button();
+            buttonAverage = new Button();
+            buttonMode = new Button();
+            buttonMidExtreme = new Button();
+            buttonRange = new Button();
             SuspendLayout();
             // 
             // buttonSearch
@@ -90,7 +94,7 @@
             // 
             // textBoxMessage
             // 
-            textBoxMessage.Location = new Point(12, 435);
+            textBoxMessage.Location = new Point(193, 381);
             textBoxMessage.Name = "textBoxMessage";
             textBoxMessage.ReadOnly = true;
             textBoxMessage.Size = new Size(177, 27);
@@ -117,27 +121,28 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 412);
+            label3.Location = new Point(193, 358);
             label3.Name = "label3";
             label3.Size = new Size(96, 20);
             label3.TabIndex = 8;
             label3.Text = "User Feeback";
             // 
-            // textBox1
+            // textBoxResult
             // 
-            textBox1.Location = new Point(195, 170);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 9;
+            textBoxResult.Location = new Point(195, 189);
+            textBoxResult.Name = "textBoxResult";
+            textBoxResult.ReadOnly = true;
+            textBoxResult.Size = new Size(207, 27);
+            textBoxResult.TabIndex = 9;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(207, 131);
+            label4.Location = new Point(195, 166);
             label4.Name = "label4";
-            label4.Size = new Size(50, 20);
+            label4.Size = new Size(159, 20);
             label4.TabIndex = 10;
-            label4.Text = "label4";
+            label4.Text = "Data Processing Result";
             // 
             // button1
             // 
@@ -148,14 +153,54 @@
             button1.Text = "Linear Search";
             button1.UseVisualStyleBackColor = true;
             // 
+            // buttonAverage
+            // 
+            buttonAverage.Location = new Point(195, 222);
+            buttonAverage.Name = "buttonAverage";
+            buttonAverage.Size = new Size(94, 29);
+            buttonAverage.TabIndex = 12;
+            buttonAverage.Text = "Average";
+            buttonAverage.UseVisualStyleBackColor = true;
+            // 
+            // buttonMode
+            // 
+            buttonMode.Location = new Point(295, 222);
+            buttonMode.Name = "buttonMode";
+            buttonMode.Size = new Size(103, 29);
+            buttonMode.TabIndex = 13;
+            buttonMode.Text = "Mode";
+            buttonMode.UseVisualStyleBackColor = true;
+            // 
+            // buttonMidExtreme
+            // 
+            buttonMidExtreme.Location = new Point(295, 257);
+            buttonMidExtreme.Name = "buttonMidExtreme";
+            buttonMidExtreme.Size = new Size(103, 29);
+            buttonMidExtreme.TabIndex = 14;
+            buttonMidExtreme.Text = "Mid-Extreme";
+            buttonMidExtreme.UseVisualStyleBackColor = true;
+            // 
+            // buttonRange
+            // 
+            buttonRange.Location = new Point(195, 257);
+            buttonRange.Name = "buttonRange";
+            buttonRange.Size = new Size(94, 29);
+            buttonRange.TabIndex = 15;
+            buttonRange.Text = "Range";
+            buttonRange.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(410, 474);
+            ClientSize = new Size(410, 422);
+            Controls.Add(buttonRange);
+            Controls.Add(buttonMidExtreme);
+            Controls.Add(buttonMode);
+            Controls.Add(buttonAverage);
             Controls.Add(button1);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxResult);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -182,8 +227,12 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox textBoxResult;
         private Label label4;
         private Button button1;
+        private Button buttonAverage;
+        private Button buttonMode;
+        private Button buttonMidExtreme;
+        private Button buttonRange;
     }
 }
