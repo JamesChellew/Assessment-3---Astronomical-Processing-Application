@@ -68,7 +68,7 @@ namespace AstronomicalProcessingApp
             }
             else
             {
-                textBoxMessage.Text = (key + " Not Found!");
+                textBoxMessage.Text = (textBoxInput.Text + " Not Found!");
             }
         }
         // Parses user input from textBoxInput to integer. Check if is integer and checks if it is not white space.
