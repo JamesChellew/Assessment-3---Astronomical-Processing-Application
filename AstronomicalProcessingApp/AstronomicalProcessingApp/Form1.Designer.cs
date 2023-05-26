@@ -28,209 +28,208 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonSearch = new Button();
-            buttonSort = new Button();
-            buttonEdit = new Button();
-            textBoxInput = new TextBox();
-            listBoxDisplay = new ListBox();
-            textBoxMessage = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBoxResult = new TextBox();
-            label4 = new Label();
-            buttonLinearSearch = new Button();
-            buttonAverage = new Button();
-            buttonMode = new Button();
-            buttonMidExtreme = new Button();
-            buttonRange = new Button();
-            SuspendLayout();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.buttonSort = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.textBoxInput = new System.Windows.Forms.TextBox();
+            this.listBoxDisplay = new System.Windows.Forms.ListBox();
+            this.textBoxMessage = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonLinearSearch = new System.Windows.Forms.Button();
+            this.buttonAverage = new System.Windows.Forms.Button();
+            this.buttonMode = new System.Windows.Forms.Button();
+            this.buttonMidExtreme = new System.Windows.Forms.Button();
+            this.buttonRange = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // buttonSearch
             // 
-            buttonSearch.Location = new Point(171, 9);
-            buttonSearch.Margin = new Padding(3, 2, 3, 2);
-            buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(94, 22);
-            buttonSearch.TabIndex = 0;
-            buttonSearch.Text = "Binary Search";
-            buttonSearch.UseVisualStyleBackColor = true;
-            buttonSearch.Click += buttonSearch_Click;
+            this.buttonSearch.Location = new System.Drawing.Point(317, 19);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(174, 46);
+            this.buttonSearch.TabIndex = 0;
+            this.buttonSearch.Text = "Binary Search";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
             // buttonSort
             // 
-            buttonSort.Location = new Point(171, 65);
-            buttonSort.Margin = new Padding(3, 2, 3, 2);
-            buttonSort.Name = "buttonSort";
-            buttonSort.Size = new Size(94, 22);
-            buttonSort.TabIndex = 1;
-            buttonSort.Text = "Sort";
-            buttonSort.UseVisualStyleBackColor = true;
-            buttonSort.Click += buttonSort_Click;
+            this.buttonSort.Location = new System.Drawing.Point(317, 139);
+            this.buttonSort.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonSort.Name = "buttonSort";
+            this.buttonSort.Size = new System.Drawing.Size(174, 46);
+            this.buttonSort.TabIndex = 1;
+            this.buttonSort.Text = "Sort";
+            this.buttonSort.UseVisualStyleBackColor = true;
             // 
             // buttonEdit
             // 
-            buttonEdit.Location = new Point(270, 23);
-            buttonEdit.Margin = new Padding(3, 2, 3, 2);
-            buttonEdit.Name = "buttonEdit";
-            buttonEdit.Size = new Size(82, 22);
-            buttonEdit.TabIndex = 2;
-            buttonEdit.Text = "Edit";
-            buttonEdit.UseVisualStyleBackColor = true;
-            buttonEdit.Click += buttonEdit_Click;
+            this.buttonEdit.Location = new System.Drawing.Point(500, 50);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(153, 46);
+            this.buttonEdit.TabIndex = 2;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = true;
             // 
             // textBoxInput
             // 
-            textBoxInput.Location = new Point(10, 23);
-            textBoxInput.Margin = new Padding(3, 2, 3, 2);
-            textBoxInput.Name = "textBoxInput";
-            textBoxInput.Size = new Size(155, 23);
-            textBoxInput.TabIndex = 3;
+            this.textBoxInput.Location = new System.Drawing.Point(20, 50);
+            this.textBoxInput.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.Size = new System.Drawing.Size(285, 39);
+            this.textBoxInput.TabIndex = 3;
             // 
             // listBoxDisplay
             // 
-            listBoxDisplay.FormattingEnabled = true;
-            listBoxDisplay.ItemHeight = 15;
-            listBoxDisplay.Location = new Point(10, 63);
-            listBoxDisplay.Margin = new Padding(3, 2, 3, 2);
-            listBoxDisplay.Name = "listBoxDisplay";
-            listBoxDisplay.Size = new Size(155, 244);
-            listBoxDisplay.TabIndex = 4;
-            listBoxDisplay.SelectedIndexChanged += listBoxDisplay_SelectedIndexChanged;
+            this.listBoxDisplay.FormattingEnabled = true;
+            this.listBoxDisplay.ItemHeight = 32;
+            this.listBoxDisplay.Location = new System.Drawing.Point(20, 134);
+            this.listBoxDisplay.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listBoxDisplay.Name = "listBoxDisplay";
+            this.listBoxDisplay.Size = new System.Drawing.Size(285, 516);
+            this.listBoxDisplay.TabIndex = 4;
             // 
             // textBoxMessage
             // 
-            textBoxMessage.Location = new Point(169, 286);
-            textBoxMessage.Margin = new Padding(3, 2, 3, 2);
-            textBoxMessage.Name = "textBoxMessage";
-            textBoxMessage.ReadOnly = true;
-            textBoxMessage.Size = new Size(155, 23);
-            textBoxMessage.TabIndex = 5;
+            this.textBoxMessage.Location = new System.Drawing.Point(314, 610);
+            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxMessage.Name = "textBoxMessage";
+            this.textBoxMessage.ReadOnly = true;
+            this.textBoxMessage.Size = new System.Drawing.Size(285, 39);
+            this.textBoxMessage.TabIndex = 5;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(10, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 15);
-            label1.TabIndex = 6;
-            label1.Text = "Input Box";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 32);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Input Box";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(10, 46);
-            label2.Name = "label2";
-            label2.Size = new Size(119, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Neutrino Interactions";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(240, 32);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Neutrino Interactions";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(169, 268);
-            label3.Name = "label3";
-            label3.Size = new Size(76, 15);
-            label3.TabIndex = 8;
-            label3.Text = "User Feeback";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(314, 573);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 32);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "User Feeback";
             // 
             // textBoxResult
             // 
-            textBoxResult.Location = new Point(171, 142);
-            textBoxResult.Margin = new Padding(3, 2, 3, 2);
-            textBoxResult.Name = "textBoxResult";
-            textBoxResult.ReadOnly = true;
-            textBoxResult.Size = new Size(182, 23);
-            textBoxResult.TabIndex = 9;
+            this.textBoxResult.Location = new System.Drawing.Point(317, 302);
+            this.textBoxResult.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.Size = new System.Drawing.Size(334, 39);
+            this.textBoxResult.TabIndex = 9;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(171, 124);
-            label4.Name = "label4";
-            label4.Size = new Size(126, 15);
-            label4.TabIndex = 10;
-            label4.Text = "Data Processing Result";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(317, 266);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(254, 32);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Data Processing Result";
             // 
             // buttonLinearSearch
             // 
-            buttonLinearSearch.Location = new Point(171, 35);
-            buttonLinearSearch.Margin = new Padding(3, 2, 3, 2);
-            buttonLinearSearch.Name = "buttonLinearSearch";
-            buttonLinearSearch.Size = new Size(94, 22);
-            buttonLinearSearch.TabIndex = 11;
-            buttonLinearSearch.Text = "Linear Search";
-            buttonLinearSearch.UseVisualStyleBackColor = true;
-            buttonLinearSearch.Click += buttonLinearSearch_Click;
+            this.buttonLinearSearch.Location = new System.Drawing.Point(317, 75);
+            this.buttonLinearSearch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonLinearSearch.Name = "buttonLinearSearch";
+            this.buttonLinearSearch.Size = new System.Drawing.Size(174, 46);
+            this.buttonLinearSearch.TabIndex = 11;
+            this.buttonLinearSearch.Text = "Linear Search";
+            this.buttonLinearSearch.UseVisualStyleBackColor = true;
+            this.buttonLinearSearch.Click += new System.EventHandler(this.buttonLinearSearch_Click);
             // 
             // buttonAverage
             // 
-            buttonAverage.Location = new Point(171, 166);
-            buttonAverage.Margin = new Padding(3, 2, 3, 2);
-            buttonAverage.Name = "buttonAverage";
-            buttonAverage.Size = new Size(82, 22);
-            buttonAverage.TabIndex = 12;
-            buttonAverage.Text = "Average";
-            buttonAverage.UseVisualStyleBackColor = true;
+            this.buttonAverage.Location = new System.Drawing.Point(317, 355);
+            this.buttonAverage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonAverage.Name = "buttonAverage";
+            this.buttonAverage.Size = new System.Drawing.Size(153, 46);
+            this.buttonAverage.TabIndex = 12;
+            this.buttonAverage.Text = "Average";
+            this.buttonAverage.UseVisualStyleBackColor = true;
             // 
             // buttonMode
             // 
-            buttonMode.Location = new Point(258, 166);
-            buttonMode.Margin = new Padding(3, 2, 3, 2);
-            buttonMode.Name = "buttonMode";
-            buttonMode.Size = new Size(90, 22);
-            buttonMode.TabIndex = 13;
-            buttonMode.Text = "Mode";
-            buttonMode.UseVisualStyleBackColor = true;
-            buttonMode.Click += buttonMode_Click;
+            this.buttonMode.Location = new System.Drawing.Point(479, 355);
+            this.buttonMode.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonMode.Name = "buttonMode";
+            this.buttonMode.Size = new System.Drawing.Size(167, 46);
+            this.buttonMode.TabIndex = 13;
+            this.buttonMode.Text = "Mode";
+            this.buttonMode.UseVisualStyleBackColor = true;
             // 
             // buttonMidExtreme
             // 
-            buttonMidExtreme.Location = new Point(258, 193);
-            buttonMidExtreme.Margin = new Padding(3, 2, 3, 2);
-            buttonMidExtreme.Name = "buttonMidExtreme";
-            buttonMidExtreme.Size = new Size(90, 22);
-            buttonMidExtreme.TabIndex = 14;
-            buttonMidExtreme.Text = "Mid-Extreme";
-            buttonMidExtreme.UseVisualStyleBackColor = true;
-            buttonMidExtreme.Click += buttonMidExtreme_Click;
+            this.buttonMidExtreme.Location = new System.Drawing.Point(479, 411);
+            this.buttonMidExtreme.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonMidExtreme.Name = "buttonMidExtreme";
+            this.buttonMidExtreme.Size = new System.Drawing.Size(167, 46);
+            this.buttonMidExtreme.TabIndex = 14;
+            this.buttonMidExtreme.Text = "Mid-Extreme";
+            this.buttonMidExtreme.UseVisualStyleBackColor = true;
             // 
             // buttonRange
             // 
-            buttonRange.Location = new Point(171, 193);
-            buttonRange.Margin = new Padding(3, 2, 3, 2);
-            buttonRange.Name = "buttonRange";
-            buttonRange.Size = new Size(82, 22);
-            buttonRange.TabIndex = 15;
-            buttonRange.Text = "Range";
-            buttonRange.UseVisualStyleBackColor = true;
+            this.buttonRange.Location = new System.Drawing.Point(317, 411);
+            this.buttonRange.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonRange.Name = "buttonRange";
+            this.buttonRange.Size = new System.Drawing.Size(153, 46);
+            this.buttonRange.TabIndex = 15;
+            this.buttonRange.Text = "Range";
+            this.buttonRange.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(359, 316);
-            Controls.Add(buttonRange);
-            Controls.Add(buttonMidExtreme);
-            Controls.Add(buttonMode);
-            Controls.Add(buttonAverage);
-            Controls.Add(buttonLinearSearch);
-            Controls.Add(label4);
-            Controls.Add(textBoxResult);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBoxMessage);
-            Controls.Add(listBoxDisplay);
-            Controls.Add(textBoxInput);
-            Controls.Add(buttonEdit);
-            Controls.Add(buttonSort);
-            Controls.Add(buttonSearch);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
-            Text = "Astronomical Processing";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(666, 675);
+            this.Controls.Add(this.buttonRange);
+            this.Controls.Add(this.buttonMidExtreme);
+            this.Controls.Add(this.buttonMode);
+            this.Controls.Add(this.buttonAverage);
+            this.Controls.Add(this.buttonLinearSearch);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBoxResult);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxMessage);
+            this.Controls.Add(this.listBoxDisplay);
+            this.Controls.Add(this.textBoxInput);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonSort);
+            this.Controls.Add(this.buttonSearch);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "Form1";
+            this.Text = "Astronomical Processing";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
