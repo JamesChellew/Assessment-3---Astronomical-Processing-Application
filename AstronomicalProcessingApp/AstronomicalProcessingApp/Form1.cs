@@ -21,7 +21,7 @@ namespace AstronomicalProcessingApp
             {
                 neutInteractions[i] = random.Next(10, 99);
             }
-            
+
         }
 
         // Clears listBoxDisplay and then writes neutInteractions array to listBoxDisplay
@@ -31,7 +31,7 @@ namespace AstronomicalProcessingApp
             listBoxDisplay.Items.Clear();
             for (int i = 0; i < arraySize; i++)
             {
-                
+
                 listBoxDisplay.Items.Add(neutInteractions[i]);
             }
         }
@@ -79,7 +79,7 @@ namespace AstronomicalProcessingApp
                 if (Int32.TryParse(text, out int input) && !(String.IsNullOrWhiteSpace(text)))
                 {
                     int k = listBoxDisplay.SelectedIndex;
-                    
+
                     neutInteractions[k] = input;
                     UpdateDisplay();
                 }
@@ -88,7 +88,7 @@ namespace AstronomicalProcessingApp
                     listBoxDisplay.ClearSelected();
                     textBoxInput.Clear();
                 }
-                
+
 
             }
         }

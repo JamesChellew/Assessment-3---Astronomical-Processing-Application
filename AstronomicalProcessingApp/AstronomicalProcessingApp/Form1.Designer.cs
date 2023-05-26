@@ -37,30 +37,33 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            textBox1 = new TextBox();
+            label4 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // buttonSearch
             // 
-            buttonSearch.Location = new Point(214, 84);
+            buttonSearch.Location = new Point(195, 12);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(94, 29);
+            buttonSearch.Size = new Size(107, 29);
             buttonSearch.TabIndex = 0;
-            buttonSearch.Text = "Search";
+            buttonSearch.Text = "Binary Search";
             buttonSearch.UseVisualStyleBackColor = true;
             buttonSearch.Click += buttonSearch_Click;
             // 
             // buttonSort
             // 
-            buttonSort.Location = new Point(214, 124);
+            buttonSort.Location = new Point(195, 87);
             buttonSort.Name = "buttonSort";
-            buttonSort.Size = new Size(94, 29);
+            buttonSort.Size = new Size(107, 29);
             buttonSort.TabIndex = 1;
             buttonSort.Text = "Sort";
             buttonSort.UseVisualStyleBackColor = true;
             // 
             // buttonEdit
             // 
-            buttonEdit.Location = new Point(214, 159);
+            buttonEdit.Location = new Point(308, 31);
             buttonEdit.Name = "buttonEdit";
             buttonEdit.Size = new Size(94, 29);
             buttonEdit.TabIndex = 2;
@@ -81,13 +84,13 @@
             listBoxDisplay.ItemHeight = 20;
             listBoxDisplay.Location = new Point(12, 84);
             listBoxDisplay.Name = "listBoxDisplay";
-            listBoxDisplay.Size = new Size(177, 104);
+            listBoxDisplay.Size = new Size(177, 324);
             listBoxDisplay.TabIndex = 4;
             listBoxDisplay.SelectedIndexChanged += listBoxDisplay_SelectedIndexChanged;
             // 
             // textBoxMessage
             // 
-            textBoxMessage.Location = new Point(12, 215);
+            textBoxMessage.Location = new Point(12, 435);
             textBoxMessage.Name = "textBoxMessage";
             textBoxMessage.ReadOnly = true;
             textBoxMessage.Size = new Size(177, 27);
@@ -114,17 +117,45 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 191);
+            label3.Location = new Point(12, 412);
             label3.Name = "label3";
             label3.Size = new Size(96, 20);
             label3.TabIndex = 8;
             label3.Text = "User Feeback";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(195, 170);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(207, 131);
+            label4.Name = "label4";
+            label4.Size = new Size(50, 20);
+            label4.TabIndex = 10;
+            label4.Text = "label4";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(195, 47);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 29);
+            button1.TabIndex = 11;
+            button1.Text = "Linear Search";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(332, 261);
+            ClientSize = new Size(410, 474);
+            Controls.Add(button1);
+            Controls.Add(label4);
+            Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -151,5 +182,8 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private TextBox textBox1;
+        private Label label4;
+        private Button button1;
     }
 }
