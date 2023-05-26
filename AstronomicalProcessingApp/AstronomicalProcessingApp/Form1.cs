@@ -1,10 +1,14 @@
+using System;
+
 namespace AstronomicalProcessingApp
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
+            // Winform initialise
             InitializeComponent();
+            // Neutrino Data Initialise
             RdmFill();
             UpdateDisplay();
         }
@@ -88,8 +92,6 @@ namespace AstronomicalProcessingApp
                     listBoxDisplay.ClearSelected();
                     textBoxInput.Clear();
                 }
-
-
             }
         }
 
@@ -104,6 +106,90 @@ namespace AstronomicalProcessingApp
                 listBoxDisplay.ClearSelected();
                 textBoxInput.Clear();
             }
+        }
+
+        private void buttonMode_Click(object sender, EventArgs e)
+        {
+            textBoxResult.Clear();
+            int maxCount = 0;
+            List<int> modes = new List<int>();
+            foreach (int i in neutInteractions)
+            {
+                int count = 0;
+                foreach (int j in neutInteractions)
+                {
+                    if ((i == j))
+                    {
+                        count++;
+                    }
+                }
+                if (count > maxCount)
+                {
+                    maxCount = count;
+                    modes.Clear();
+                    modes.Add(i);
+                }
+                else if (count == maxCount && !modes.Contains(i))
+                {
+                    modes.Add(i);
+                }
+            }
+            int length = modes.Count;
+            for (int i = 0; i < length; i++)
+            {
+                textBoxResult.AppendText(modes[i].ToString());
+                if (i != length - 1)
+                {
+                    textBoxResult.AppendText(", ");
+                }
+            }
+
+        }
+
+        private void buttonMidExtreme_Click(object sender, EventArgs e)
+        {
+            textBoxResult.Clear();
+            int max = 0;
+            int min = 100;
+            double mid;
+            foreach (int i in neutInteractions)
+            {
+                if (i <= min)
+                {
+                    min = i;
+                }
+                else if (i >= max)
+                {
+                    max = i;
+                }
+            }
+            mid = (max + min) / 2;
+            textBoxResult.Text = mid.ToString();
+        }
+
+        private void buttonLinearSearch_Click(object sender, EventArgs e)
+        {
+            bool itemFound = false;
+            if (!String.IsNullOrWhiteSpace(textBoxInput.Text) && Int32.TryParse(textBoxInput.Text, out int key))
+            {
+                foreach (int i in neutInteractions)
+                {
+                    if (key == i)
+                    {
+                        itemFound = true;
+                        break;
+                    }
+                }
+            }
+            if (itemFound)
+            {
+                MessageBox.Show("Search Successful - Number Found in Array", "Search Result", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Search Unsuccessful - Number Not Found in Array", "Search Result", MessageBoxButtons.OK);
+            }
+
         }
 
         private void buttonSort_Click(object sender, EventArgs e)
