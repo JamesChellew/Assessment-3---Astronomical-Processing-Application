@@ -39,7 +39,7 @@
             label3 = new Label();
             textBoxResult = new TextBox();
             label4 = new Label();
-            button1 = new Button();
+            buttonLinearSearch = new Button();
             buttonAverage = new Button();
             buttonMode = new Button();
             buttonMidExtreme = new Button();
@@ -146,12 +146,12 @@
             // 
             // buttonLinearSearch
             // 
-            button1.Location = new Point(195, 47);
-            button1.Name = "button1";
-            button1.Size = new Size(107, 29);
-            button1.TabIndex = 11;
-            button1.Text = "Linear Search";
-            button1.UseVisualStyleBackColor = true;
+            buttonLinearSearch.Location = new Point(195, 47);
+            buttonLinearSearch.Name = "button1";
+            buttonLinearSearch.Size = new Size(107, 29);
+            buttonLinearSearch.TabIndex = 11;
+            buttonLinearSearch.Text = "Linear Search";
+            buttonLinearSearch.UseVisualStyleBackColor = true;
             // 
             // buttonAverage
             // 
@@ -198,7 +198,7 @@
             Controls.Add(buttonMidExtreme);
             Controls.Add(buttonMode);
             Controls.Add(buttonAverage);
-            Controls.Add(button1);
+            Controls.Add(buttonLinearSearch);
             Controls.Add(label4);
             Controls.Add(textBoxResult);
             Controls.Add(label3);
