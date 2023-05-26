@@ -53,7 +53,7 @@ namespace AstronomicalProcessingApp
                     mid = (min + max) / 2;
                     if (neutInteractions[mid] == key)
                     {
-                        MessageBox.Show("Search result found", "Search Result");
+                        textBoxMessage.Text = (key + " Found!");
                         break;
                     }
                     else if (neutInteractions[mid] < key)
@@ -65,11 +65,10 @@ namespace AstronomicalProcessingApp
                         max = mid - 1;
                     }
                 }
-                MessageBox.Show("Search Value Not Found", "Search Result");
             }
             else
             {
-                // ERROR MESSAGE HERE
+                textBoxMessage.Text = (key + " Not Found!");
             }
         }
         // Parses user input from textBoxInput to integer. Check if is integer and checks if it is not white space.
@@ -183,11 +182,11 @@ namespace AstronomicalProcessingApp
             }
             if (itemFound)
             {
-                MessageBox.Show("Search Successful - Number Found in Array", "Search Result", MessageBoxButtons.OK);
+                textBoxMessage.Text = (textBoxInput.Text + " Found in Array!");
             }
             else
             {
-                MessageBox.Show("Search Unsuccessful - Number Not Found in Array", "Search Result", MessageBoxButtons.OK);
+                textBoxMessage.Text = (textBoxInput.Text + " Not Found in Array!");
             }
 
         }
