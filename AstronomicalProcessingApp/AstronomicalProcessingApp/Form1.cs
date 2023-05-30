@@ -86,6 +86,8 @@ namespace AstronomicalProcessingApp
 
                     neutInteractions[k] = input;
                     UpdateDisplay();
+                    textBoxInput.Clear();
+                    textBoxInput.Clear();
                 }
                 else
                 {
@@ -211,6 +213,87 @@ namespace AstronomicalProcessingApp
                 }
             }
             UpdateDisplay();
+        }
+
+        private void textBoxInput_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Input a number you would like to search for here.
+or
+Select an entry and edit it here to chage the number.", textBoxInput);
+        }
+
+        private void buttonBinarySearch_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Binary searches the array of numbers using the number in the input box as the key.
+The search will tell you if number exists in array.", buttonBinarySearch);
+        }
+
+        private void buttonLinearSearch_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Sequentially searches the array of numbers using the number in the input box as the key.
+The search will tell you if number exists in array.", buttonLinearSearch);
+        }
+
+        private void buttonEdit_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Select a piece of data you would like to change from the list of neutrino interactions,
+change the data in to the desired value in the input text box,
+press the edit button to submit the changes to the array.", buttonEdit);
+        }
+
+        private void buttonSort_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("Sorts the data in assending order upon button press.", buttonSort);
+        }
+
+        private void listBoxDisplay_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Displays neutrino information data.
+Click on a value to select it.", listBoxDisplay);
+        }
+
+        private void textBoxResult_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("Result of mathematical opperations will appear here", textBoxResult);
+        }
+
+        private void buttonAverage_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Calculates average neutrino interaction pre hour
+Equation:
+Sum of interactions/24", buttonAverage)
+        }
+
+        private void buttonMode_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(@"Calculates the mode number of neutrino interactions from the day", buttonMode);
+        }
+
+        private void buttonRange_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Calculates the range of neutrino interactions
+Equation:
+Max interactions - Min interactions", buttonRange);
+        }
+
+        private void buttonMidExtreme_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show(
+                @"Calculates the midpoint of the two most extreme numbers
+Equation:
+(Max interactions + Min interactions)/2", buttonMidExtreme);
+        }
+
+        private void textBoxMessage_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("Each action/error will display a message here", textBoxMessage);
         }
     }
 }
