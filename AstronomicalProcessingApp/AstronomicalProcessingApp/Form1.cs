@@ -39,7 +39,6 @@ namespace AstronomicalProcessingApp
                 listBoxDisplay.Items.Add(neutInteractions[i]);
             }
         }
-        // test
         // Binary Search Method on button click
         private void buttonSearch_Click(object sender, EventArgs e)
         {
@@ -72,6 +71,7 @@ namespace AstronomicalProcessingApp
                 textBoxMessage.Text = ("Invalid Input");
             }
         }
+        // Edit Button
         // Parses user input from textBoxInput to integer. Check if is integer and checks if it is not white space.
         // Using listBox index value, replaces corresponding value in the array with parsed input from user then updates the array.
         private void buttonEdit_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace AstronomicalProcessingApp
                 }
             }
         }
-
+        // Upon selecting value from list box, display it in the input box
         private void listBoxDisplay_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBoxDisplay.SelectedIndex != -1)
@@ -111,6 +111,17 @@ namespace AstronomicalProcessingApp
             }
         }
 
+        //
+        // Mode Button
+        // Double Foreach loop:
+        // The first one gives the target value
+        // The second gives the comparing value
+        // For each Target value, we will iterate through the array for comparing values
+        // Each time the comparing number matches the target, increase the count by 1
+        // After comparing each of the numbers once, if the count exceeds the maxcount, we will clear a list add that value to the list
+        // if that value had the same count as the max count, we will just add the value to the list instead.
+        // Lastly, we will use a for loop to display the results in a readable format.
+        //
         private void buttonMode_Click(object sender, EventArgs e)
         {
             textBoxResult.Clear();
@@ -148,7 +159,11 @@ namespace AstronomicalProcessingApp
             }
 
         }
-
+        // Mid-Extreme Buton
+        // Iterates through each value of array,
+        // Sets a new min or max if the number compared to it is lower/higher for that loop,
+        // Calculates average of max and min (the mid extreme),
+        // Displays result in textBoxResult
         private void buttonMidExtreme_Click(object sender, EventArgs e)
         {
             textBoxResult.Clear();
@@ -169,7 +184,11 @@ namespace AstronomicalProcessingApp
             mid = (max + min) / 2;
             textBoxResult.Text = mid.ToString();
         }
-
+        // Linear search
+        // Checks if the key is a valid integer,
+        // loops through each value of the array,
+        // compares each value to the key,
+        // returns message if key matches result, and if it doesnt.
         private void buttonLinearSearch_Click(object sender, EventArgs e)
         {
             bool itemFound = false;
@@ -194,7 +213,8 @@ namespace AstronomicalProcessingApp
             }
 
         }
-
+        // Sort Button
+        // Sorts neutrino interactions in assending order on button press.
         private void buttonSort_Click(object sender, EventArgs e)
         {
             int max = arraySize;
@@ -214,7 +234,10 @@ namespace AstronomicalProcessingApp
             }
             UpdateDisplay();
         }
-
+        //
+        // Below here is all the tool tips for each GUI element. Move your code above it for the sake of readability.
+        // The @ symbol just makes the string a literal, it reads each character as it is (i.e. each new line is a new line for the tooltip)
+        //
         private void textBoxInput_MouseHover(object sender, EventArgs e)
         {
             toolTip1.Show(
@@ -267,7 +290,7 @@ Click on a value to select it.", listBoxDisplay);
             toolTip1.Show(
                 @"Calculates average neutrino interaction pre hour
 Equation:
-Sum of interactions/24", buttonAverage)
+Sum of interactions/24", buttonAverage);
         }
 
         private void buttonMode_MouseHover(object sender, EventArgs e)
