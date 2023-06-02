@@ -173,6 +173,7 @@
             buttonAverage.TabIndex = 12;
             buttonAverage.Text = "Average";
             buttonAverage.UseVisualStyleBackColor = true;
+            buttonAverage.Click += buttonAverage_Click;
             buttonAverage.MouseHover += buttonAverage_MouseHover;
             // 
             // buttonMode

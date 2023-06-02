@@ -234,6 +234,25 @@ namespace AstronomicalProcessingApp
             }
             UpdateDisplay();
         }
+        // Average (mean) button
+        // Calculates sum of array and increments the size based on each loop (each number) of array.
+        // Sum divide by size to get mean, rounded to 2 decimal places.
+        private void buttonAverage_Click(object sender, EventArgs e)
+        {
+            double sum = 0;
+            double size = 0;
+            foreach (int i in neutInteractions)
+            {
+                sum += i;
+                size++;
+            }
+            double average = sum / size;
+            average = Math.Round(average, 2);
+            textBoxResult.Clear();
+            textBoxResult.Text = average.ToString();
+        }
+
+
         //
         // Below here is all the tool tips for each GUI element. Move your code above it for the sake of readability.
         // The @ symbol just makes the string a literal, it reads each character as it is (i.e. each new line is a new line for the tooltip)
@@ -318,5 +337,7 @@ Equation:
         {
             toolTip1.Show("Each action/error will display a message here", textBoxMessage);
         }
+
+
     }
 }
