@@ -95,14 +95,14 @@
             listBoxDisplay.ItemHeight = 20;
             listBoxDisplay.Location = new Point(13, 84);
             listBoxDisplay.Name = "listBoxDisplay";
-            listBoxDisplay.Size = new Size(177, 444);
+            listBoxDisplay.Size = new Size(177, 484);
             listBoxDisplay.TabIndex = 4;
             listBoxDisplay.SelectedIndexChanged += listBoxDisplay_SelectedIndexChanged;
             listBoxDisplay.MouseHover += listBoxDisplay_MouseHover;
             // 
             // textBoxMessage
             // 
-            textBoxMessage.Location = new Point(197, 499);
+            textBoxMessage.Location = new Point(195, 541);
             textBoxMessage.Name = "textBoxMessage";
             textBoxMessage.ReadOnly = true;
             textBoxMessage.Size = new Size(177, 27);
@@ -130,7 +130,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(195, 476);
+            label3.Location = new Point(193, 518);
             label3.Name = "label3";
             label3.Size = new Size(96, 20);
             label3.TabIndex = 8;
@@ -211,7 +211,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(410, 541);
+            ClientSize = new Size(410, 583);
             Controls.Add(buttonRange);
             Controls.Add(buttonMidExtreme);
             Controls.Add(buttonMode);
