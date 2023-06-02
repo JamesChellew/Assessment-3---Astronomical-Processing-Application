@@ -318,5 +318,10 @@ Equation:
         {
             toolTip1.Show("Each action/error will display a message here", textBoxMessage);
         }
+
+        private void buttonAverage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
