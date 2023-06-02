@@ -167,21 +167,21 @@ namespace AstronomicalProcessingApp
         private void buttonMidExtreme_Click(object sender, EventArgs e)
         {
             textBoxResult.Clear();
-            int max = 0;
-            int min = 100;
+            int max = neutInteractions[0];
+            int min = neutInteractions[0];
             double mid;
             foreach (int i in neutInteractions)
             {
-                if (i <= min)
+                if (i < min)
                 {
                     min = i;
                 }
-                else if (i >= max)
+                else if (i > max)
                 {
                     max = i;
                 }
             }
-            mid = (max + min) / 2;
+            mid = (max + min) / 2.0; // Must have a double in calculation to get double result.
             textBoxResult.Text = mid.ToString();
         }
         // Linear search
