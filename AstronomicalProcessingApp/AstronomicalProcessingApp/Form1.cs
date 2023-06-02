@@ -1,5 +1,13 @@
 using System;
-
+/*
+ * James Chellew + Joshua Barker
+ * Group: JJ
+ * Date: 02/06/2023
+ * Version: 1.0
+ * Astronomical Processing App
+ * Loads data between 10 and 99 and perform data calculations
+ * Bubble sort, Bineary search, linear search, mean, mid-extreme, mode, range.
+ */
 namespace AstronomicalProcessingApp
 {
     public partial class Form1 : Form
