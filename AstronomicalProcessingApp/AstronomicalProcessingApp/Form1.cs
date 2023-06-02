@@ -237,12 +237,37 @@ namespace AstronomicalProcessingApp
 
         private void buttonAverage_Click(object sender, EventArgs e)
         {
+            textBoxResult.Clear();
+            double sum = 0;
+            foreach (int i in neutInteractions)
+            {
+                sum += i;
+            }
+
+            double average = sum / arraySize;
+            average = Math.Round(average, 2);
+            textBoxResult.Text = average.ToString();
 
         }
 
         private void buttonRange_Click(object sender, EventArgs e)
         {
-
+            textBoxResult.Clear();
+            int max = neutInteractions[0];
+            int min = neutInteractions[0];
+            foreach (int i in neutInteractions)
+            {
+                if (i < min)
+                {
+                    min = i;
+                }
+                else if (i > max)
+                {
+                    max = i;
+                }
+            }
+            int range = max - min;
+            textBoxResult.Text = range.ToString();
         }
         //
         // Below here is all the tool tips for each GUI element. Move your code above it for the sake of readability.
