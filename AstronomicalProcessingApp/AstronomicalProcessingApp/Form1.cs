@@ -251,6 +251,28 @@ namespace AstronomicalProcessingApp
             textBoxResult.Clear();
             textBoxResult.Text = average.ToString();
         }
+        // Range Button
+        // Finds min and max numbers in array and finds the difference.
+        private void buttonRange_Click(object sender, EventArgs e)
+        {
+            int min = neutInteractions[0];
+            int max = neutInteractions[0];
+            int range;
+            foreach (int i in neutInteractions)
+            {
+                if(i < min)
+                {
+                    min = i;
+                }
+                if(i > max)
+                {
+                    max = i;
+                }
+            }
+            range = max - min;
+            textBoxResult.Clear();
+            textBoxResult.Text = range.ToString();
+        }
 
 
         //
@@ -338,6 +360,6 @@ Equation:
             toolTip1.Show("Each action/error will display a message here", textBoxMessage);
         }
 
-
+       
     }
 }

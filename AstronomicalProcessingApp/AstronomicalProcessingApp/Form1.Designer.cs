@@ -206,6 +206,7 @@
             buttonRange.TabIndex = 15;
             buttonRange.Text = "Range";
             buttonRange.UseVisualStyleBackColor = true;
+            buttonRange.Click += buttonRange_Click;
             buttonRange.MouseHover += buttonRange_MouseHover;
             // 
             // Form1
