@@ -234,6 +234,16 @@ namespace AstronomicalProcessingApp
             }
             UpdateDisplay();
         }
+
+        private void buttonAverage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRange_Click(object sender, EventArgs e)
+        {
+
+        }
         //
         // Below here is all the tool tips for each GUI element. Move your code above it for the sake of readability.
         // The @ symbol just makes the string a literal, it reads each character as it is (i.e. each new line is a new line for the tooltip)
@@ -319,9 +329,6 @@ Equation:
             toolTip1.Show("Each action/error will display a message here", textBoxMessage);
         }
 
-        private void buttonAverage_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }
